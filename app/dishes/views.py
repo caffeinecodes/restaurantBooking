@@ -32,15 +32,25 @@ def dish_list(request):
 @api_view(['GET'])
 @permission_classes((AllowAny, ))
 def categories(request):
-    category = Category.objects.all()
-    category_serializer = CategorySerializer(category, many=True)
-    return Response(
-        {
-            'code':
-            200,
-            'message':
-            'Verification email has been sent to your email. Please verify your account.',
-            'data':
-            category_serializer.data
-        },
-        status=status.HTTP_200_OK)
+    if request.method == 'GET':
+        category = Category.objects.all()
+        category_serializer = CategorySerializer(category, many=True)
+        return Response(
+            {
+                'code': 200,
+                'message': 'Category list fetched successfully',
+                'data': category_serializer.data
+            },
+            status=status.HTTP_200_OK)
+    elif request.method == 'POST':
+        data = request.data
+        category_name = data.get("name", None)
+        category, created = Category.objects.get_or_created(name=category_name)
+        category_serializer = CategorySerializer(category, many=False)
+        return Response(
+            {
+                'code': 201 if created else 200,
+                'message': 'Category created successfully',
+                'data': category_serializer.data
+            },
+            status=status.HTTP_201_CREATED)

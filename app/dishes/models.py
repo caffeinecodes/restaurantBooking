@@ -45,6 +45,7 @@ class Dish(models.Model):
     description = models.TextField()
     time_slot = models.TextField()
     mrp = models.PositiveSmallIntegerField()
+    quantity = models.PositiveSmallIntegerField()
     offer_price = models.PositiveSmallIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -1,0 +1,155 @@
+{% include "partials/admin-header.html" %}
+
+
+<div class="container-wrapper">
+
+	<!-- Vertical Menu Bar-->
+	{% include "partials/admin-menu-bar.html" %}
+
+	<!-- Description -->
+	<div class="description">
+
+		<p>
+			<a href="##" class="goBack">
+				<img src="/static/app/admin/assets/images/arrow_Back.png">
+			</a>
+			<a href="/admin/item-list">Home</a> /Sun Restaurant
+		</p>
+		<!-- Banner Heading -->
+		<div class="row tab-header">
+			<div class="pad0 col-md-12">
+				<div class="tab-heading">
+					<h1>ADD MENU</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row detail-desc">
+			<div class="menu-image-detail">
+				<h1>Upload image</h1>
+				<p>Upload Size: 247px x 165px
+					<br> Max images: 3 images</p>
+			</div>
+			<div class="image-upload">
+				<label for="file-input">
+					<img src="/static/app/admin/assets/images/Image-placeholder.png" />
+					<h1>Add photo</h1>
+				</label>
+				<input id="file-input" type="file" />
+			</div>
+			<div class="menu-image">
+				<img src="/static/app/admin/assets/images/logan.jpg" />
+				<div class="image-delete">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="menu-image">
+				<img src="/static/app/admin/assets/images/logan.jpg" />
+				<div class="image-delete">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="menu-image">
+				<img src="/static/app/admin/assets/images/logan.jpg" />
+				<div class="image-delete">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+				</div>
+			</div>
+			<form method="post">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Select Category</label>
+						<select class="form-control" id="selectbox">
+							<option value="#consumergoods">
+								<a href="">+ Add Category</a>
+							</option>
+							<option>Soup veg</option>
+							<option>Soup Nonveg</option>
+							<option>Eggetarian</option>
+							<option>Appetizer veg dry</option>
+							<option>Appetizer non-veg dry</option>
+							<option>Andhra style chicken dry</option>
+							<option>Andhra style chicken dry</option>
+							<option>Andhra style mutton dry</option>
+							<option>mutton currys</option>
+							<option>Sea food fish</option>
+							<option>Sea food prawns</option>
+							<option>Sea food crab</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Item Name</label>
+						<input type="text" class="form-control" placeholder="Item Name">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Veg/Non veg</label>
+						<select class="form-control selectpicker">
+							<option>Veg</option>
+							<option data-icon="glyphicon-heart">Non Veg</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Available Slot</label>
+						<select class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>MRP</label>
+						<input type="text" class="form-control rupee" placeholder="0">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Offer price</label>
+						<input type="text" class="form-control rupee" placeholder="0">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Item Description</label>
+						<textarea class="form-control" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="col-md-12 text-right">
+					<a class="btn btn-cancel">Cancel</a>
+					<a class="btn btn-upload">Upload</a>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</div>
+<!--Add category Popup -->
+<div class="modal fade" id="consumergoods" data-target="#consumergoods">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header orange">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+
+				</button>
+				<h4 class="modal-title">
+					<strong></strong>AppleBees</h4>
+				<p>Description Here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+					sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include "partials/admin-footer.html" %}

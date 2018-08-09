@@ -1,267 +1,4 @@
-[04/Apr/2016 11:02:03] ERROR [django.request:256] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
-    for pattern in self.url_patterns:
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
-    self._urlconf_module = import_module(self.urlconf_name)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
-    url(r'^home/', include('app.home.urls')),
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
-    urlconf_module = import_module(urlconf_module)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
-    url(r'abc/$', views.faq, name='index'),
-AttributeError: 'module' object has no attribute 'faq'
-[04/Apr/2016 11:02:17] WARNING [django.request:170] Not Found: /
-[04/Apr/2016 11:02:17] WARNING [django.request:170] Not Found: /
-[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/urls.py modified
-[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/urls.py modified
-[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker exiting (pid: 14524)
-[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker exiting (pid: 14524)
-[04/Apr/2016 11:08:42] ERROR [django.request:256] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
-    for pattern in self.url_patterns:
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
-    self._urlconf_module = import_module(self.urlconf_name)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
-    url(r'^home/', include('app.home.urls')),
-  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
-    urlconf_module = import_module(urlconf_module)
-  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
-    url(r'^$', views.index, name='index'),
-AttributeError: 'module' object has no attribute 'index'
-[04/Apr/2016 11:08:50] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
-[04/Apr/2016 11:08:50] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
-[04/Apr/2016 11:08:51] INFO [gunicorn.error:224] Worker exiting (pid: 14573)
-[04/Apr/2016 11:08:51] INFO [gunicorn.error:224] Worker exiting (pid: 14573)
-[04/Apr/2016 11:08:54] WARNING [django.request:170] Not Found: /
-[04/Apr/2016 11:08:55] WARNING [django.request:170] Not Found: /
-[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
-[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
-[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker exiting (pid: 14598)
-[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker exiting (pid: 14598)
-[04/Apr/2016 11:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 14603)
-[04/Apr/2016 11:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 14603)
-[04/Apr/2016 11:38:54] INFO [gunicorn.error:224] Worker exiting (pid: 14634)
-[04/Apr/2016 11:38:54] INFO [gunicorn.error:224] Worker exiting (pid: 14634)
-[04/Apr/2016 11:48:20] INFO [gunicorn.error:224] Worker exiting (pid: 14638)
-[04/Apr/2016 11:48:20] INFO [gunicorn.error:224] Worker exiting (pid: 14638)
-[04/Apr/2016 12:03:55] INFO [gunicorn.error:224] Worker exiting (pid: 14657)
-[04/Apr/2016 12:03:55] INFO [gunicorn.error:224] Worker exiting (pid: 14657)
-[04/Apr/2016 12:12:49] INFO [gunicorn.error:224] Worker exiting (pid: 14801)
-[04/Apr/2016 12:12:49] INFO [gunicorn.error:224] Worker exiting (pid: 14801)
-[04/Apr/2016 12:16:06] WARNING [django.request:170] Not Found: /
-[04/Apr/2016 12:16:07] WARNING [django.request:170] Not Found: /
-[04/Apr/2016 12:19:07] INFO [gunicorn.error:224] Worker exiting (pid: 14981)
-[04/Apr/2016 12:19:07] INFO [gunicorn.error:224] Worker exiting (pid: 14981)
-[04/Apr/2016 12:23:32] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
-[04/Apr/2016 12:24:01] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
-[04/Apr/2016 12:24:17] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
-[04/Apr/2016 12:24:19] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
-[04/Apr/2016 12:24:22] INFO [gunicorn.error:224] Worker exiting (pid: 15004)
-[04/Apr/2016 12:24:22] INFO [gunicorn.error:224] Worker exiting (pid: 15004)
-[04/Apr/2016 12:24:37] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
-[04/Apr/2016 12:26:14] WARNING [django.request:170] Not Found: /
-[04/Apr/2016 12:28:17] INFO [gunicorn.error:224] Worker exiting (pid: 15013)
-[04/Apr/2016 12:28:17] INFO [gunicorn.error:224] Worker exiting (pid: 15013)
-[04/Apr/2016 12:36:18] INFO [gunicorn.error:224] Worker exiting (pid: 15038)
-[04/Apr/2016 12:36:18] INFO [gunicorn.error:224] Worker exiting (pid: 15038)
-[04/Apr/2016 12:36:39] INFO [gunicorn.error:224] Worker exiting (pid: 15068)
-[04/Apr/2016 12:36:39] INFO [gunicorn.error:224] Worker exiting (pid: 15068)
-[04/Apr/2016 13:13:53] INFO [gunicorn.error:224] Worker exiting (pid: 15087)
-[04/Apr/2016 13:13:53] INFO [gunicorn.error:224] Worker exiting (pid: 15087)
-[04/Apr/2016 13:21:19] INFO [gunicorn.error:224] Worker exiting (pid: 15169)
-[04/Apr/2016 13:21:19] INFO [gunicorn.error:224] Worker exiting (pid: 15169)
-[04/Apr/2016 13:34:41] INFO [gunicorn.error:224] Worker exiting (pid: 15188)
-[04/Apr/2016 13:34:41] INFO [gunicorn.error:224] Worker exiting (pid: 15188)
-[04/Apr/2016 14:09:21] INFO [gunicorn.error:224] Worker exiting (pid: 19897)
-[04/Apr/2016 14:09:21] INFO [gunicorn.error:224] Worker exiting (pid: 19897)
-[04/Apr/2016 14:48:48] INFO [gunicorn.error:224] Worker exiting (pid: 20025)
-[04/Apr/2016 14:48:48] INFO [gunicorn.error:224] Worker exiting (pid: 20025)
-[04/Apr/2016 14:57:41] INFO [gunicorn.error:224] Worker exiting (pid: 20059)
-[04/Apr/2016 14:57:41] INFO [gunicorn.error:224] Worker exiting (pid: 20059)
-[04/Apr/2016 15:02:37] INFO [gunicorn.error:224] Worker exiting (pid: 20087)
-[04/Apr/2016 15:02:37] INFO [gunicorn.error:224] Worker exiting (pid: 20087)
-[04/Apr/2016 18:10:00] INFO [gunicorn.error:224] Worker exiting (pid: 20103)
-[04/Apr/2016 18:10:00] INFO [gunicorn.error:224] Worker exiting (pid: 20103)
-[05/Apr/2016 04:37:28] INFO [gunicorn.error:224] Worker exiting (pid: 20194)
-[05/Apr/2016 04:37:28] INFO [gunicorn.error:224] Worker exiting (pid: 20194)
-[05/Apr/2016 05:13:55] INFO [gunicorn.error:224] Worker exiting (pid: 20224)
-[05/Apr/2016 05:13:55] INFO [gunicorn.error:224] Worker exiting (pid: 20224)
-[05/Apr/2016 05:19:12] WARNING [django.request:170] Not Found: /
-[05/Apr/2016 05:34:27] INFO [gunicorn.error:224] Worker exiting (pid: 20402)
-[05/Apr/2016 05:34:27] INFO [gunicorn.error:224] Worker exiting (pid: 20402)
-[05/Apr/2016 06:13:16] INFO [gunicorn.error:224] Worker exiting (pid: 20782)
-[05/Apr/2016 06:13:16] INFO [gunicorn.error:224] Worker exiting (pid: 20782)
-[05/Apr/2016 06:23:15] INFO [gunicorn.error:224] Worker exiting (pid: 21121)
-[05/Apr/2016 06:23:15] INFO [gunicorn.error:224] Worker exiting (pid: 21121)
-[05/Apr/2016 07:03:56] INFO [gunicorn.error:224] Worker exiting (pid: 21268)
-[05/Apr/2016 07:03:56] INFO [gunicorn.error:224] Worker exiting (pid: 21268)
-[05/Apr/2016 07:12:21] INFO [gunicorn.error:224] Worker exiting (pid: 21584)
-[05/Apr/2016 07:12:21] INFO [gunicorn.error:224] Worker exiting (pid: 21584)
-[05/Apr/2016 07:42:36] INFO [gunicorn.error:224] Worker exiting (pid: 21864)
-[05/Apr/2016 07:42:36] INFO [gunicorn.error:224] Worker exiting (pid: 21864)
-[08/Aug/2018 14:51:25] WARNING [django.request:152] Not Found: /favicon.ico
-[08/Aug/2018 14:51:25] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 1960
-[08/Aug/2018 14:51:38] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 4, in index
-    return render(request,'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 14:51:38] ERROR [django.server:124] "GET / HTTP/1.1" 500 83102
-[08/Aug/2018 14:51:39] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 4, in index
-    return render(request,'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 14:51:39] ERROR [django.server:124] "GET / HTTP/1.1" 500 83102
-[08/Aug/2018 15:21:45] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 4, in index
-    return render(request,'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 15:21:45] ERROR [django.server:124] "GET / HTTP/1.1" 500 83102
-[08/Aug/2018 16:04:40] ERROR [django.request:135] Internal Server Error: /admin/login/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
-    response = response.render()
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 107, in render
-    self.content = self.rendered_content
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
-    template = self.resolve_template(self.template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
-    return select_template(template, using=self.using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 53, in select_template
-    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
-TemplateDoesNotExist: admin/login.html
-[08/Aug/2018 16:04:40] ERROR [django.server:124] "GET /admin/login/?next=/admin/ HTTP/1.1" 500 84944
-[08/Aug/2018 16:04:53] WARNING [django.request:152] Not Found: /
-[08/Aug/2018 16:04:53] WARNING [django.server:124] "GET / HTTP/1.1" 404 2119
-[08/Aug/2018 16:05:14] ERROR [django.request:135] Internal Server Error: /admin/login/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
-    response = response.render()
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 107, in render
-    self.content = self.rendered_content
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
-    template = self.resolve_template(self.template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
-    return select_template(template, using=self.using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 53, in select_template
-    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
-TemplateDoesNotExist: admin/login.html
-[08/Aug/2018 16:05:14] ERROR [django.server:124] "GET /admin/login/?next=/admin/ HTTP/1.1" 500 84809
-[08/Aug/2018 16:06:15] ERROR [django.request:135] Internal Server Error: /admin/login/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
-    response = response.render()
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 107, in render
-    self.content = self.rendered_content
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
-    template = self.resolve_template(self.template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
-    return select_template(template, using=self.using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 53, in select_template
-    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
-TemplateDoesNotExist: admin/login.html
-[08/Aug/2018 16:06:15] ERROR [django.server:124] "GET /admin/login/?next=/admin/ HTTP/1.1" 500 84944
-[08/Aug/2018 16:06:18] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 4, in index
-    return render(request,'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:06:18] ERROR [django.server:124] "GET / HTTP/1.1" 500 82970
-[08/Aug/2018 16:07:03] ERROR [django.request:135] Internal Server Error: /
+[08/Aug/2018 16:26:20] ERROR [django.request:135] Internal Server Error: /
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
     response = get_response(request)
@@ -272,332 +9,560 @@ Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'accounts/register.html')
+    return render(request, 'index.html')
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
     content = loader.render_to_string(template_name, context, request, using=using)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
     template = get_template(template_name, using=using)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
     raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: accounts/register.html
-[08/Aug/2018 16:07:03] ERROR [django.server:124] "GET / HTTP/1.1" 500 83408
-[08/Aug/2018 16:10:36] ERROR [django.request:135] Internal Server Error: /
+TemplateDoesNotExist: index.html
+[08/Aug/2018 16:26:21] ERROR [django.server:124] "GET / HTTP/1.1" 500 83067
+[08/Aug/2018 18:00:40] ERROR [django.request:284] Internal Server Error: /api/dish-list/
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/project/app/dishes/views.py", line 18, in dish_list
+    Category.objects.create(name="afxl")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/project/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1048, "Column 'offer_price' cannot be null")
+[08/Aug/2018 18:04:00] ERROR [django.request:284] Internal Server Error: /api/dish-list/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/project/app/dishes/views.py", line 18, in dish_list
+    Category.objects.create(name="afxl")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/project/app/dishes/models.py", line 22, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (1146, "Table 'commonproj.category' doesn't exist")
+[08/Aug/2018 18:08:04] ERROR [django.request:284] Internal Server Error: /api/dish-list/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/project/app/dishes/views.py", line 18, in dish_list
+    Category.objects.create(name="afxl")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/project/app/dishes/models.py", line 22, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry 'afxl' for key 'categories_name_09afee77_uniq'")
+[08/Aug/2018 18:18:08] WARNING [django.request:182] Not Found: /api/categories
+[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/images/fav.png
+[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 15:48:14] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:39] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:01:39] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:01:39] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/css/style.css
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
+[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/script.js
+[09/Aug/2018 16:48:04] ERROR [django.request:284] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'accounts/register.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: accounts/register.html
-[08/Aug/2018 16:10:36] ERROR [django.server:124] "GET / HTTP/1.1" 500 83199
-[08/Aug/2018 16:10:37] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:12] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'accounts/register.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: accounts/register.html
-[08/Aug/2018 16:10:37] ERROR [django.server:124] "GET / HTTP/1.1" 500 83199
-[08/Aug/2018 16:10:56] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:26] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:10:56] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:10:58] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:50] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:10:58] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:10:59] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:51] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:10:59] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:11:00] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:52] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:11:00] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:12:14] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:53] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:12:14] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:12:15] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:53] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:12:15] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:12:16] ERROR [django.request:135] Internal Server Error: /
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html
+[09/Aug/2018 16:48:53] ERROR [django.request:284] Internal Server Error: /
 Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:12:16] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:12:16] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:12:16] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:16:07] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:16:07] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:16:09] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:16:10] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:16:33] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, '/home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: /home/index.html
-[08/Aug/2018 16:16:33] ERROR [django.server:124] "GET / HTTP/1.1" 500 83133
-[08/Aug/2018 16:16:44] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'templates/home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: templates/home/index.html
-[08/Aug/2018 16:16:44] ERROR [django.server:124] "GET / HTTP/1.1" 500 83232
-[08/Aug/2018 16:18:01] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:18:01] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
-[08/Aug/2018 16:19:58] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'home/index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: home/index.html
-[08/Aug/2018 16:19:58] ERROR [django.server:124] "GET / HTTP/1.1" 500 83122
+    return render(request, 'admin/add-menu.html')
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
+    template = context.template.engine.get_template(template_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: admin-header/commondata.html

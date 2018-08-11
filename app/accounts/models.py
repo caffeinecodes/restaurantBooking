@@ -99,9 +99,9 @@ class Account(AbstractBaseUser):
         related_name="tmp_user_set",
         related_query_name="user")
     first_name = models.CharField(
-        _('first name'), max_length=30, blank=True, null=True)
+        _('first name'), max_length=230, blank=True, null=True)
     last_name = models.CharField(
-        _('last name'), max_length=30, blank=True, null=True)
+        _('last name'), max_length=230, blank=True, null=True)
     email = models.EmailField(_('email address'), unique=True, max_length=255)
     display_image = models.URLField(null=True)
     is_staff = models.BooleanField(_('staff status'), default=False)

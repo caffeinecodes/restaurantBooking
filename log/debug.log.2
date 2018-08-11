@@ -1,24 +1,4 @@
-[08/Aug/2018 16:26:20] ERROR [django.request:135] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
-    response = self._get_response(request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'index.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 25, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: index.html
-[08/Aug/2018 16:26:21] ERROR [django.server:124] "GET / HTTP/1.1" 500 83067
-[08/Aug/2018 18:00:40] ERROR [django.request:284] Internal Server Error: /api/dish-list/
+[11/Aug/2018 07:54:57] ERROR [django.request:284] Internal Server Error: /api/dishes/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
@@ -36,14 +16,364 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/project/app/dishes/views.py", line 18, in dish_list
-    Category.objects.create(name="afxl")
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 34, in dish_list
+    dish, created = Dish.objects.get_or_create(name=dish_name)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
     obj.save(force_insert=True, using=self.db)
-  File "/Users/apple/workspace/afxal/project/app/dishes/models.py", line 23, in save
-    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 60, in save
+    super(Dish, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1048, "Column 'category_id' cannot be null")
+[11/Aug/2018 07:59:34] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 34, in dish_list
+    dish, created = Dish.objects.get_or_create(name=dish_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 60, in save
+    super(Dish, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1048, "Column 'category_id' cannot be null")
+[11/Aug/2018 08:01:57] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 34, in dish_list
+    dish, created = Dish.objects.get_or_create(name=dish_name)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 60, in save
+    super(Dish, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1048, "Column 'category_id' cannot be null")
+[11/Aug/2018 08:03:49] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 37, in dish_list
+    name=dish_name, category_id=category_id, profile_id=profile_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 465, in get_or_create
+    return self.get(**lookup), False
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 381, in get
+    num = len(clone)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+OperationalError: (1054, "Unknown column 'dishes.profile_id' in 'field list'")
+[11/Aug/2018 08:04:44] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 37, in dish_list
+    name=dish_name, category_id=category_id, profile_id=profile_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 60, in save
+    super(Dish, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1048, "Column 'mrp' cannot be null")
+[11/Aug/2018 08:05:22] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 41, in dish_list
+    mrp=mrp)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 60, in save
+    super(Dish, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1048, "Column 'quantity' cannot be null")
+[11/Aug/2018 08:07:49] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 41, in dish_list
+    mrp=mrp)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 60, in save
+    super(Dish, self).save(*args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
     force_update=force_update, update_fields=update_fields)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
@@ -71,7 +401,7 @@ Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
     raise errorvalue
 IntegrityError: (1048, "Column 'offer_price' cannot be null")
-[08/Aug/2018 18:04:00] ERROR [django.request:284] Internal Server Error: /api/dish-list/
+[11/Aug/2018 08:08:23] ERROR [django.request:284] Internal Server Error: /api/dishes/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
@@ -89,14 +419,20 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/project/app/dishes/views.py", line 18, in dish_list
-    Category.objects.create(name="afxl")
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 42, in dish_list
+    mrp=mrp)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
     obj.save(force_insert=True, using=self.db)
-  File "/Users/apple/workspace/afxal/project/app/dishes/models.py", line 22, in save
-    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 60, in save
+    super(Dish, self).save(*args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
     force_update=force_update, update_fields=update_fields)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
@@ -115,18 +451,20 @@ Traceback (most recent call last):
     return super(CursorDebugWrapper, self).execute(sql, params)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
     return self.cursor.execute(sql, params)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
     return self.cursor.execute(query, args)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
     self.errorhandler(self, exc, value)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
     raise errorvalue
-ProgrammingError: (1146, "Table 'commonproj.category' doesn't exist")
-[08/Aug/2018 18:08:04] ERROR [django.request:284] Internal Server Error: /api/dish-list/
+IntegrityError: (1048, "Column 'offer_price' cannot be null")
+[11/Aug/2018 08:10:13] WARNING [django.request:182] Not Found: /admin/item-list
+[11/Aug/2018 08:13:24] WARNING [django.request:182] Not Found: /admin/add-menu
+[11/Aug/2018 08:14:00] WARNING [django.request:182] Not Found: /admin/item-list
+[11/Aug/2018 08:14:31] WARNING [django.request:182] Not Found: /admin/add-menu
+[11/Aug/2018 11:12:29] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
@@ -144,425 +482,117 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/project/app/dishes/views.py", line 18, in dish_list
-    Category.objects.create(name="afxl")
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
-    obj.save(force_insert=True, using=self.db)
-  File "/Users/apple/workspace/afxal/project/app/dishes/models.py", line 22, in save
-    super(Category, self).save(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
-    force_update=force_update, update_fields=update_fields)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
-    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
-    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
-    using=using, raw=raw)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
-    return query.get_compiler(using=using).execute_sql(return_id)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
-    return self.cursor.execute(query, args)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
-    self.errorhandler(self, exc, value)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
-    raise errorvalue
-IntegrityError: (1062, "Duplicate entry 'afxl' for key 'categories_name_09afee77_uniq'")
-[08/Aug/2018 18:18:08] WARNING [django.request:182] Not Found: /api/categories
-[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 15:47:26] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 15:47:27] WARNING [django.request:182] Not Found: /assets/images/fav.png
-[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 15:48:13] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 15:48:14] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:36] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:37] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:39] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:01:39] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:01:39] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:40] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:41] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:42] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:01:43] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/css/bootstrap.min.css
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/css/materialdesignicons.min.css
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/css/style.css
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:26:26] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:48:04] ERROR [django.request:284] Internal Server Error: /
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 68, in categories
+    'list_products': True
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 11, in products_fun
+    if 'list_dishes' in self.context:
+NameError: global name 'self' is not defined
+[11/Aug/2018 11:12:30] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:12] ERROR [django.request:284] Internal Server Error: /
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 68, in categories
+    'list_products': True
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 11, in products_fun
+    if 'list_dishes' in self.context:
+NameError: global name 'self' is not defined
+[11/Aug/2018 11:12:31] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:26] ERROR [django.request:284] Internal Server Error: /
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 68, in categories
+    'list_products': True
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 11, in products_fun
+    if 'list_dishes' in self.context:
+NameError: global name 'self' is not defined
+[11/Aug/2018 11:12:32] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:50] ERROR [django.request:284] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:51] ERROR [django.request:284] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:52] ERROR [django.request:284] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:53] ERROR [django.request:284] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:53] ERROR [django.request:284] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
-[09/Aug/2018 16:48:53] ERROR [django.request:284] Internal Server Error: /
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/project/app/home/views.py", line 5, in index
-    return render(request, 'admin/add-menu.html')
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
-    return template.render(context, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
-    reraise(exc, self.backend)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
-    six.reraise(exc.__class__, new, sys.exc_info()[2])
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
-    return self.template.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
-    return self._render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
-    return self.nodelist.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
-    bit = node.render_annotated(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
-    return self.render(context)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 200, in render
-    template = context.template.engine.get_template(template_name)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
-    raise TemplateDoesNotExist(name, tried=tried)
-TemplateDoesNotExist: admin-header/commondata.html
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 68, in categories
+    'list_products': True
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 11, in products_fun
+    if 'list_dishes' in self.context:
+NameError: global name 'self' is not defined

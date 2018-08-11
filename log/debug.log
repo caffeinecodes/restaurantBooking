@@ -1,194 +1,248 @@
-[09/Aug/2018 16:57:22] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 16:57:22] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:57:22] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:57:22] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:57:23] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:57:23] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 16:59:52] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 16:59:52] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 16:59:52] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 16:59:52] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:59:52] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:59:52] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 16:59:52] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 16:59:53] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 16:59:53] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 16:59:53] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 17:00:16] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:00:16] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:00:16] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 17:00:16] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 17:00:16] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 17:00:16] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 17:00:16] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 17:00:23] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 17:00:58] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:00:58] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:00:58] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:07] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:07] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:07] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:14] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:14] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:14] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:17] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:17] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:17] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:18] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:18] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:18] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:20] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:20] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:20] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:28] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:28] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:28] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:33] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:33] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:33] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 17:01:34] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 17:01:34] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 17:01:34] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 18:04:08] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 18:04:08] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 18:04:08] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 18:05:02] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 18:05:02] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 18:05:02] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 18:05:06] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 18:05:06] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 18:05:06] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 18:05:47] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 18:05:47] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 18:05:47] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 18:05:48] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 18:05:48] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 18:05:48] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 18:05:49] WARNING [django.request:182] Not Found: /assets/images/Arrow_Back.png
-[09/Aug/2018 18:05:49] WARNING [django.request:182] Not Found: /assets/images/Image-placeholder.png
-[09/Aug/2018 18:05:49] WARNING [django.request:182] Not Found: /assets/images/logan.jpg
-[09/Aug/2018 18:13:33] WARNING [django.request:182] Not Found: /assets/js/jquery-3.1.0.min.js
-[09/Aug/2018 18:13:33] WARNING [django.request:182] Not Found: /assets/js/bootstrap.min.js
-[09/Aug/2018 18:13:33] WARNING [django.request:182] Not Found: /assets/js/wow.min.js
-[09/Aug/2018 18:13:33] WARNING [django.request:182] Not Found: /assets/js/script.js
-[09/Aug/2018 18:18:12] WARNING [django.request:182] Not Found: /assets/images/fav.png
-[09/Aug/2018 18:18:15] WARNING [django.request:182] Not Found: /forget-password.html
-[09/Aug/2018 18:19:17] WARNING [django.request:182] Not Found: /dashboard
-[09/Aug/2018 18:19:27] WARNING [django.request:182] Not Found: /dashboard
-[09/Aug/2018 18:20:56] WARNING [django.request:182] Not Found: /dashboard
-[09/Aug/2018 18:21:02] WARNING [django.request:182] Not Found: /api/
-[09/Aug/2018 18:21:14] WARNING [django.request:182] Not Found: /api/
-[09/Aug/2018 18:21:15] WARNING [django.request:182] Not Found: /api/
-[09/Aug/2018 18:21:15] WARNING [django.request:182] Not Found: /api/
-[09/Aug/2018 18:21:15] WARNING [django.request:182] Not Found: /api/
-[09/Aug/2018 18:21:15] WARNING [django.request:182] Not Found: /api/
-[09/Aug/2018 18:23:22] WARNING [django.request:182] Not Found: /api/
-[09/Aug/2018 18:23:34] WARNING [django.request:182] Not Found: /item-list/assets/images/pexels.jpeg
-[09/Aug/2018 18:23:34] WARNING [django.request:182] Not Found: /item-list/assets/images/veg-artboard.png
-[09/Aug/2018 18:23:34] WARNING [django.request:182] Not Found: /item-list/assets/images/edit.png
-[09/Aug/2018 18:23:34] WARNING [django.request:182] Not Found: /item-list/assets/images/salad.jpeg
-[09/Aug/2018 18:23:34] WARNING [django.request:182] Not Found: /item-list/assets/images/rolls.jpeg
-[09/Aug/2018 18:23:34] WARNING [django.request:182] Not Found: /item-list/assets/images/salmon.jpeg
-[09/Aug/2018 18:23:34] WARNING [django.request:182] Not Found: /item-list/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:23:46] WARNING [django.request:182] Not Found: /item-list/assets/images/pexels.jpeg
-[09/Aug/2018 18:23:46] WARNING [django.request:182] Not Found: /item-list/assets/images/veg-artboard.png
-[09/Aug/2018 18:23:46] WARNING [django.request:182] Not Found: /item-list/assets/images/edit.png
-[09/Aug/2018 18:23:46] WARNING [django.request:182] Not Found: /item-list/assets/images/rolls.jpeg
-[09/Aug/2018 18:23:46] WARNING [django.request:182] Not Found: /item-list/assets/images/salmon.jpeg
-[09/Aug/2018 18:23:46] WARNING [django.request:182] Not Found: /item-list/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:23:46] WARNING [django.request:182] Not Found: /item-list/assets/images/salad.jpeg
-[09/Aug/2018 18:23:52] WARNING [django.request:182] Not Found: /item-list/add-menu.html
-[09/Aug/2018 18:23:54] WARNING [django.request:182] Not Found: /item-list/assets/images/pexels.jpeg
-[09/Aug/2018 18:23:54] WARNING [django.request:182] Not Found: /item-list/assets/images/veg-artboard.png
-[09/Aug/2018 18:23:54] WARNING [django.request:182] Not Found: /item-list/assets/images/edit.png
-[09/Aug/2018 18:23:54] WARNING [django.request:182] Not Found: /item-list/assets/images/rolls.jpeg
-[09/Aug/2018 18:23:54] WARNING [django.request:182] Not Found: /item-list/assets/images/salad.jpeg
-[09/Aug/2018 18:23:54] WARNING [django.request:182] Not Found: /item-list/assets/images/salmon.jpeg
-[09/Aug/2018 18:23:54] WARNING [django.request:182] Not Found: /item-list/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:29:49] WARNING [django.request:182] Not Found: /dashboard
-[09/Aug/2018 18:30:07] WARNING [django.request:182] Not Found: /item-list
-[09/Aug/2018 18:30:50] WARNING [django.request:182] Not Found: /item-list/item-details.html
-[09/Aug/2018 18:32:17] WARNING [django.request:182] Not Found: /item-list/
-[09/Aug/2018 18:32:43] WARNING [django.request:182] Not Found: /item-list/
-[09/Aug/2018 18:32:52] WARNING [django.request:182] Not Found: /admin/item-list/
-[09/Aug/2018 18:33:12] WARNING [django.request:182] Not Found: /admin/assets/images/fav.png
-[09/Aug/2018 18:33:18] WARNING [django.request:182] Not Found: /admin/item-list/
-[09/Aug/2018 18:33:28] WARNING [django.request:182] Not Found: /admin/item-list/
-[09/Aug/2018 18:33:29] WARNING [django.request:182] Not Found: /admin/item-list/
-[09/Aug/2018 18:33:29] WARNING [django.request:182] Not Found: /admin/item-list/
-[09/Aug/2018 18:33:42] WARNING [django.request:182] Not Found: /admin/item-list/
-[09/Aug/2018 18:33:43] WARNING [django.request:182] Not Found: /admin/item-list/
-[09/Aug/2018 18:33:46] WARNING [django.request:182] Not Found: /admin/
-[09/Aug/2018 18:34:00] WARNING [django.request:182] Not Found: /admin/
-[09/Aug/2018 18:34:01] WARNING [django.request:182] Not Found: /admin/
-[09/Aug/2018 18:34:08] WARNING [django.request:182] Not Found: /admin/item-list/add-menu.html
-[09/Aug/2018 18:34:26] WARNING [django.request:182] Not Found: /admin/item-list/add-menu.html
-[09/Aug/2018 18:35:27] WARNING [django.request:182] Not Found: /admin/add-menu
-[09/Aug/2018 18:36:23] WARNING [django.request:182] Not Found: /admin/item-list/item-details.html
-[09/Aug/2018 18:37:45] WARNING [django.request:182] Not Found: /admin/item-list/item-details.html
-[09/Aug/2018 18:37:51] WARNING [django.request:182] Not Found: /item-list/
-[09/Aug/2018 18:38:06] WARNING [django.request:182] Not Found: /item-list/
-[09/Aug/2018 18:38:09] WARNING [django.request:182] Not Found: /admin/item-list
-[09/Aug/2018 18:38:14] WARNING [django.request:182] Not Found: /admin/item-details
-[09/Aug/2018 18:38:14] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:38:14] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:38:14] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:38:14] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:38:14] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:38:19] WARNING [django.request:182] Not Found: /admin/item-details/edit-menu.html
-[09/Aug/2018 18:39:31] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:39:31] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:39:31] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:39:31] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:39:31] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:39:36] WARNING [django.request:182] Not Found: /admin/edit-menu
-[09/Aug/2018 18:39:37] WARNING [django.request:182] Not Found: /admin/edit-menu/assets/images/Arrow_Back.png
-[09/Aug/2018 18:39:37] WARNING [django.request:182] Not Found: /admin/edit-menu/assets/images/Image-placeholder.png
-[09/Aug/2018 18:39:37] WARNING [django.request:182] Not Found: /admin/edit-menu/assets/images/logan.jpg
-[09/Aug/2018 18:39:37] WARNING [django.request:182] Not Found: /admin/edit-menu/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:40:30] WARNING [django.request:182] Not Found: /admin/item-details/item-list.html
-[09/Aug/2018 18:41:20] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:41:20] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:41:20] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:41:21] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:41:21] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:41:51] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:41:51] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:41:51] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:41:51] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:41:51] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:41:55] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:41:55] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:41:55] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:41:55] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:41:55] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:41:56] WARNING [django.request:182] Not Found: /item-list/
-[09/Aug/2018 18:42:16] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:42:16] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:42:16] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:42:16] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:42:16] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:42:19] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:42:19] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:42:20] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:42:20] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:42:20] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:47:45] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:47:45] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:47:45] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:47:45] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:47:45] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
-[09/Aug/2018 18:47:49] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/Arrow_Back.png
-[09/Aug/2018 18:47:49] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/rolls.jpeg
-[09/Aug/2018 18:47:49] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/salad.jpeg
-[09/Aug/2018 18:47:49] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/logan.jpg
-[09/Aug/2018 18:47:49] WARNING [django.request:182] Not Found: /admin/item-details/assets/images/nonveg-artboard.png
+[11/Aug/2018 12:18:04] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
+    'list_dishes': True if show_products else False
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
+    dish_serializer = DishSerializer(dishes, many=True).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 26, in time_slots_func
+    return eval(instance.time_slot)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[11/Aug/2018 12:19:00] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
+    'list_dishes': True if show_products else False
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
+    dish_serializer = DishSerializer(dishes, many=True).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 26, in time_slots_func
+    return eval(instance.time_slot)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[11/Aug/2018 12:19:05] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
+    'list_dishes': True if show_products else False
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
+    dish_serializer = DishSerializer(dishes, many=True).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 26, in time_slots_func
+    return eval(instance.time_slot)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[11/Aug/2018 12:21:40] WARNING [django.request:182] Not Found: /admin/add-menu
+[11/Aug/2018 12:23:05] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 48, in dish_list
+    time_slot=time_slot)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 507, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
+    obj = self.create(**params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 63, in save
+    super(Dish, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`commonproj`.`dishes`, CONSTRAINT `dishes_profile_id_986f3fd5_fk_accounts_id` FOREIGN KEY (`profile_id`) REFERENCES `accounts` (`id`))')
+[11/Aug/2018 12:23:40] ERROR [django.request:284] Internal Server Error: /api/dishes/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 54, in dish_list
+    'data': dish_serializer.data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 531, in data
+    ret = super(Serializer, self).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
+    return method(value)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 26, in time_slots_func
+    return eval(instance.time_slot)
+TypeError: eval() arg 1 must be a string or code object
+[11/Aug/2018 12:24:09] WARNING [django.request:182] Not Found: /admin/item-list
+[11/Aug/2018 12:32:21] WARNING [django.request:182] Not Found: /admin/add-menu
+[11/Aug/2018 12:36:39] WARNING [django.request:182] Not Found: /admin/item-list
+[11/Aug/2018 14:11:22] WARNING [django.request:182] Not Found: /admin/item-details
+[11/Aug/2018 14:32:23] WARNING [django.request:182] Not Found: /api/update-quantity/
+[11/Aug/2018 14:39:53] WARNING [django.request:182] Not Found: /api/update-quantity/
+[11/Aug/2018 14:42:33] WARNING [django.request:182] Not Found: /admin/add-menu
+[11/Aug/2018 14:44:28] WARNING [django.request:182] Not Found: /admin/item-list
+[11/Aug/2018 14:44:31] WARNING [django.request:182] Not Found: /admin/add-menu
+[11/Aug/2018 14:44:50] WARNING [django.request:182] Not Found: /admin/item-list
+[11/Aug/2018 14:47:57] WARNING [django.request:182] Not Found: /admin/item-details

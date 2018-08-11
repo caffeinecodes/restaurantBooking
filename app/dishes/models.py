@@ -5,6 +5,7 @@ from django.template.defaultfilters import slugify
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 import random
+from app.accounts.models import Account
 
 
 class Category(models.Model):
@@ -37,7 +38,11 @@ admin.site.register(Category)
 
 
 class Dish(models.Model):
-    thumbnail = models.URLField(blank=True, null=True)
+    profile = models.ForeignKey(Account, on_delete=models.CASCADE)
+    thumbnail = models.URLField(
+        blank=True,
+        null=True,
+        default="/static/app/admin/assets/images/pexels.jpeg")
     name = models.CharField(max_length=160)
     slug_name = models.SlugField(max_length=350)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -45,7 +50,7 @@ class Dish(models.Model):
     description = models.TextField()
     time_slot = models.TextField()
     mrp = models.PositiveSmallIntegerField()
-    quantity = models.PositiveSmallIntegerField()
+    quantity = models.PositiveSmallIntegerField(default=0)
     offer_price = models.PositiveSmallIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -1,13 +1,17 @@
 <!-- Js -->
-<script src="/static/app/admin/assets/js/jquery-3.1.0.min.js"></script>
-<script src="/static/app/admin/assets/js/bootstrap.min.js"></script>
-
-<script src="/static/app/admin/assets/js/wow.min.js"></script>
+<script type="text/html" id="categoryTemplate">
+    <%
+        _.each(categories,function(category,idx){
+    %>
+        <option value="<%=category.id%>"><%=category.name%></option>
+    <%})
+    %>
+</script>
 <script src="/static/app/admin/assets/js/script.js"></script>
+
 <script type="text/javascript">
     // wow js
     new WOW().init();
-
 </script>
 </body>
 

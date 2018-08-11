@@ -54,39 +54,24 @@
 					<i class="fa fa-trash" aria-hidden="true"></i>
 				</div>
 			</div>
-			<form method="post">
+			<form id="addItemForm">
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Select Category</label>
-						<select class="form-control" id="selectbox">
-							<option value="#consumergoods">
-								<a href="">+ Add Category</a>
-							</option>
-							<option>Soup veg</option>
-							<option>Soup Nonveg</option>
-							<option>Eggetarian</option>
-							<option>Appetizer veg dry</option>
-							<option>Appetizer non-veg dry</option>
-							<option>Andhra style chicken dry</option>
-							<option>Andhra style chicken dry</option>
-							<option>Andhra style mutton dry</option>
-							<option>mutton currys</option>
-							<option>Sea food fish</option>
-							<option>Sea food prawns</option>
-							<option>Sea food crab</option>
+						<select class="form-control" id="categoryList" name="category_id">
 						</select>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Item Name</label>
-						<input type="text" class="form-control" placeholder="Item Name">
+						<input type="text" class="form-control" placeholder="Item Name" name="name">
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Veg/Non veg</label>
-						<select class="form-control selectpicker">
+						<select class="form-control selectpicker" name="is_veg">
 							<option>Veg</option>
 							<option data-icon="glyphicon-heart">Non Veg</option>
 						</select>
@@ -95,35 +80,33 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Available Slot</label>
-						<select class="form-control">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
+						<select class="form-control" id="timeSlots" name="available_slots" multiple="multiple" required>
+							<option value="10AM-11PM">10AM-11PM</option>
+							<option value="11AM-12PM">11AM-12PM</option>
 						</select>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>MRP</label>
-						<input type="text" class="form-control rupee" placeholder="0">
+						<input type="number" class="form-control rupee" placeholder="0" name="mrp">
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Offer price</label>
-						<input type="text" class="form-control rupee" placeholder="0">
+						<input type="number" class="form-control rupee" placeholder="0" name="offer_price">
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="form-group">
 						<label>Item Description</label>
-						<textarea class="form-control" rows="3"></textarea>
+						<textarea class="form-control" rows="3" name="description"></textarea>
 					</div>
 				</div>
 				<div class="col-md-12 text-right">
-					<a class="btn btn-cancel">Cancel</a>
-					<a class="btn btn-upload">Upload</a>
+					<button class="btn btn-cancel">Cancel</button>
+					<button type="submit" class="btn btn-upload">Upload</button>
 				</div>
 			</form>
 		</div>

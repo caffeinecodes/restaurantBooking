@@ -1,4 +1,4 @@
-[11/Aug/2018 11:12:36] ERROR [django.request:284] Internal Server Error: /api/categories/
+[15/Aug/2018 08:24:06] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
@@ -16,154 +16,14 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 68, in categories
-    'list_products': True
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 11, in products_fun
-    if 'list_dishes' in self.context:
-NameError: global name 'self' is not defined
-[11/Aug/2018 11:12:58] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 68, in categories
-    'list_products': True
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-TypeError: products_fun() takes exactly 2 arguments (1 given)
-[11/Aug/2018 11:19:57] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 72, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 10, in products_fun
-    if 'list_dishes' in self.context and self.context.list_dishes:
-AttributeError: 'dict' object has no attribute 'list_dishes'
-[11/Aug/2018 11:19:57] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 72, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 10, in products_fun
-    if 'list_dishes' in self.context and self.context.list_dishes:
-AttributeError: 'dict' object has no attribute 'list_dishes'
-[11/Aug/2018 11:22:01] WARNING [django.request:182] Not Found: /admin/item-details
-[11/Aug/2018 11:35:03] WARNING [django.request:182] Not Found: /admin/item-list
-[11/Aug/2018 11:35:12] WARNING [django.request:182] Not Found: /admin/add-menu
-[11/Aug/2018 11:35:16] WARNING [django.request:182] Not Found: /admin/item-list
-[11/Aug/2018 11:46:49] WARNING [django.request:182] Not Found: /admin/item-list
-[11/Aug/2018 11:46:55] WARNING [django.request:182] Not Found: /admin/add-menu
-[11/Aug/2018 11:47:15] ERROR [django.request:284] Internal Server Error: /api/dishes/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 49, in dish_list
-    is_veg=is_veg)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="sssjsjs")
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 467, in get_or_create
-    return self._create_object_from_params(lookup, params)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 499, in _create_object_from_params
-    obj = self.create(**params)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
     obj.save(force_insert=True, using=self.db)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 63, in save
-    super(Dish, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
     force_update=force_update, update_fields=update_fields)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
@@ -186,18 +46,10 @@ Traceback (most recent call last):
     six.reraise(dj_exc_type, dj_exc_value, traceback)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
     return self.cursor.execute(sql, params)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
-    return self.cursor.execute(query, args)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
-    self.errorhandler(self, exc, value)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
-    raise errorvalue
-DataError: (1264, "Out of range value for column 'mrp' at row 1")
-[11/Aug/2018 11:47:49] WARNING [django.request:182] Not Found: /admin/item-list
-[11/Aug/2018 11:59:24] WARNING [django.request:182] Not Found: /admin/item-details
-[11/Aug/2018 12:02:17] WARNING [django.request:182] Not Found: /admin/add-menu
-[11/Aug/2018 12:15:02] WARNING [django.request:182] Not Found: /admin/item-list
-[11/Aug/2018 12:15:02] ERROR [django.request:284] Internal Server Error: /api/categories/
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:18] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
@@ -215,32 +67,40 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
-    dish_serializer = DishSerializer(dishes, many=True).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1746, in to_representation
-    method = getattr(self.parent, self.method_name)
-AttributeError: 'DishSerializer' object has no attribute 'time_slots_func'
-[11/Aug/2018 12:15:23] ERROR [django.request:284] Internal Server Error: /api/categories/
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:20] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
@@ -258,34 +118,40 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
-    dish_serializer = DishSerializer(dishes, many=True).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 25, in time_slots_func
-    return eval(instance.time_slots)
-AttributeError: 'Dish' object has no attribute 'time_slots'
-[11/Aug/2018 12:15:34] ERROR [django.request:284] Internal Server Error: /api/categories/
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:20] ERROR [django.request:284] Internal Server Error: /api/categories/
 Traceback (most recent call last):
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
     response = self.process_exception_by_middleware(e, request)
@@ -303,303 +169,410 @@ Traceback (most recent call last):
     response = handler(request, *args, **kwargs)
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
     return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:22] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:22] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:24] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:27] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:28] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:24:28] ERROR [django.request:284] Internal Server Error: /api/categories/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 63, in categories
+    Category.objects.create(name="UUU")
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/models.py", line 23, in save
+    super(Category, self).save(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: UNIQUE constraint failed: categories.name
+[15/Aug/2018 08:30:03] WARNING [django.request:182] Not Found: /admin/item-details
+[15/Aug/2018 09:12:09] WARNING [django.request:182] Not Found: /admin/item-details/
+[15/Aug/2018 09:13:44] WARNING [django.request:182] Not Found: /admin/item-details/
+[15/Aug/2018 09:13:45] WARNING [django.request:182] Not Found: /admin/item-details/
+[15/Aug/2018 09:13:46] WARNING [django.request:182] Not Found: /admin/item-details/
+[15/Aug/2018 09:13:47] WARNING [django.request:182] Not Found: /admin/item-details/
+[15/Aug/2018 09:13:47] WARNING [django.request:182] Not Found: /admin/item-details/
+[15/Aug/2018 09:13:50] WARNING [django.request:182] Not Found: /admin/item-details/njs
+[15/Aug/2018 09:16:51] WARNING [django.request:182] Not Found: /admin/item-details/
+[15/Aug/2018 09:17:05] WARNING [django.request:182] Not Found: /admin/item-details/529124656-6
+[15/Aug/2018 09:17:11] WARNING [django.request:182] Not Found: /admin/item-details/listfreelancer-11
+[15/Aug/2018 09:28:44] WARNING [django.request:182] Not Found: /admin/assets/images/fav.png
+[15/Aug/2018 09:28:50] WARNING [django.request:182] Not Found: /admin/item-details/listfreelancer-www/
+[15/Aug/2018 09:34:28] ERROR [django.request:284] Internal Server Error: /admin/item-details/listfreelancer-11/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/home/views.py", line 24, in item_details
+    return render(request, 'admin/item-details.html', context)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 74: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[15/Aug/2018 09:41:37] WARNING [django.request:182] Not Found: /admin/item-details/akjghjghjkjgk-16
+[15/Aug/2018 09:43:47] ERROR [django.request:284] Internal Server Error: /admin/item-details/akjghjghjkjgk-16/
+Traceback (most recent call last):
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/workspace/afxal/sun_groups/app/home/views.py", line 23, in item_details
+    context['dish'] = DishSerializer(dish, many=False).data
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 531, in data
+    ret = super(Serializer, self).data
   File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
     self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
-    dish_serializer = DishSerializer(dishes, many=True).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 25, in time_slots_func
-    return eval(instance.time_slot)
-  File "<string>", line 0
-    
-    ^
-SyntaxError: unexpected EOF while parsing
-[11/Aug/2018 12:16:48] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
-    dish_serializer = DishSerializer(dishes, many=True).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 26, in time_slots_func
-    return eval(instance.time_slot)
-  File "<string>", line 0
-    
-    ^
-SyntaxError: unexpected EOF while parsing
-[11/Aug/2018 12:16:49] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
-    dish_serializer = DishSerializer(dishes, many=True).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 26, in time_slots_func
-    return eval(instance.time_slot)
-  File "<string>", line 0
-    
-    ^
-SyntaxError: unexpected EOF while parsing
-[11/Aug/2018 12:17:08] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 71, in categories
-    'list_dishes': True if show_products else False
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 12, in products_fun
-    dish_serializer = DishSerializer(dishes, many=True).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 729, in data
-    ret = super(ListSerializer, self).data
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 647, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 500, in to_representation
-    ret[field.field_name] = field.to_representation(attribute)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/fields.py", line 1747, in to_representation
-    return method(value)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/serializer.py", line 26, in time_slots_func
-    return eval(instance.time_slot)
-  File "<string>", line 0
-    
-    ^
-SyntaxError: unexpected EOF while parsing
-[11/Aug/2018 12:17:51] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 62, in categories
-    dish = Dish.objects.delete()
-AttributeError: 'Manager' object has no attribute 'delete'
-[11/Aug/2018 12:17:51] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 62, in categories
-    dish = Dish.objects.delete()
-AttributeError: 'Manager' object has no attribute 'delete'
-[11/Aug/2018 12:17:52] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 62, in categories
-    dish = Dish.objects.delete()
-AttributeError: 'Manager' object has no attribute 'delete'
-[11/Aug/2018 12:17:52] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 62, in categories
-    dish = Dish.objects.delete()
-AttributeError: 'Manager' object has no attribute 'delete'
-[11/Aug/2018 12:17:54] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 62, in categories
-    dish = Dish.objects.delete()
-AttributeError: 'Manager' object has no attribute 'delete'
-[11/Aug/2018 12:17:54] ERROR [django.request:284] Internal Server Error: /api/categories/
-Traceback (most recent call last):
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    response = self.handle_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
-    return func(*args, **kwargs)
-  File "/Users/apple/workspace/afxal/sun_groups/app/dishes/views.py", line 62, in categories
-    dish = Dish.objects.delete()
-AttributeError: 'Manager' object has no attribute 'delete'
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 483, in to_representation
+    fields = self._readable_fields
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 377, in _readable_fields
+    field for field in self.fields.values()
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 984, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/Users/apple/workspace/afxal/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 1081, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'category_name' was declared on serializer DishSerializer, but has not been included in the 'fields' option.

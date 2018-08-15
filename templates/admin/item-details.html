@@ -19,7 +19,7 @@
 		<div class="row tab-header">
 			<div class="pad0 col-md-12">
 				<div class="tab-heading">
-					<h1>Mexican Fried Rice</h1>
+					<h1>{{dish.name}}</h1>
 				</div>
 			</div>
 		</div>
@@ -60,21 +60,20 @@
 			<div class=" col-md-6">
 				<div class="view-item-desc">
 					<ul>
-						<li>Beverages</li>
+						<li>{{dish.category_name}}</li>
 						<li>
 							<span>
 								<img src="/static/app/admin/assets/images/nonveg-artboard.png">
-							</span>Mexican Fried Rice</li>
-						<li>Rs. 250</li>
+							</span>{{dish.name}}</li>
+						<li>Rs. {{dish.mrp}}</li>
 						<li>
-							<span>Rs. 200</span>
+							<span>Rs. {{dish.offer_price}}</span>
 							<span class="green">Offer price</span>
 						</li>
-						<li>56 Available</li>
-						<li>Slot timing 9AM - 12PM, 5PM - 10PM</li>
+						<li>{{dish.quantity}} Available</li>
+						<li>Slot timing: {{ dish.time_slots|join:"," }}</li>
 						<li>Item description</li>
-						<li>Mexican Fried Rice is good rice able to have in lorem ipsum as we can have. Mexican Fried Rice is good rice able to
-							have in lorem ipsum as we can have.</li>
+						<li>{{dish.description}}</li>
 					</ul>
 				</div>
 			</div>

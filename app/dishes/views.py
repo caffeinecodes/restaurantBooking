@@ -21,12 +21,9 @@ def dish_list(request):
         dish_serializer = DishSerializer(dish, many=True)
         return Response(
             {
-                'code':
-                200,
-                'message':
-                'Verification email has been sent to your email. Please verify your account.',
-                'data':
-                dish_serializer.data
+                'code': 200,
+                'message': 'Dish List',
+                'data': dish_serializer.data
             },
             status=status.HTTP_200_OK)
     elif request.method == 'POST':
@@ -38,6 +35,7 @@ def dish_list(request):
         offer_price = data.get("offer_price")
         is_veg = data.get("is_veg")
         time_slot = data.get("time_slot", [])
+        description = data.get("description")
         dish, created = Dish.objects.get_or_create(
             name=dish_name,
             category_id=category_id,
@@ -45,7 +43,8 @@ def dish_list(request):
             mrp=mrp,
             offer_price=offer_price,
             is_veg=is_veg,
-            time_slot=time_slot)
+            time_slot=time_slot,
+            description=description)
         dish_serializer = DishSerializer(dish, many=False)
         return Response(
             {
@@ -101,7 +100,6 @@ def dish_quantity(request):
     data = request.data
     dish_id = data.get("dish_id")
     quantity = data.get("quantity", 0)
-    print data
     try:
         dish = Dish.objects.get(id=dish_id)
         dish.quantity = quantity

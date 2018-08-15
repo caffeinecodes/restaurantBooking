@@ -19,14 +19,18 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class DishSerializer(serializers.ModelSerializer):
     time_slots = serializers.SerializerMethodField('time_slots_func')
+    category_name = serializers.SerializerMethodField('category_name_func')
 
     @staticmethod
     def time_slots_func(instance):
-        print instance.time_slot
         return eval(instance.time_slot)
+
+    @staticmethod
+    def category_name_func(instance):
+        return instance.category.name
 
     class Meta:
         model = Dish
         fields = ('id', 'name', 'slug_name', 'thumbnail', 'is_veg',
                   'description', 'time_slots', 'mrp', 'offer_price',
-                  'quantity')
+                  'quantity', 'description', 'category_name')
